@@ -1,5 +1,5 @@
 <?php
-namespace \ClearTmp\Controller;
+namespace Hackathon2017\ClearTmp\Controller;
 
 class NavigationController extends Navigation_parent
 {
