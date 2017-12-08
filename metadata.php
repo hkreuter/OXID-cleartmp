@@ -25,7 +25,7 @@ $aModule = [
 	'email'       => '',
 	'extend'      => [],
 	'files'       => [
-		OxidEsales\EshopCommunity\Application\Controller\Admin\NavigationController::class => ClearTmp\Controller\NavigationController::clas,
+		OxidEsales\EshopCommunity\Application\Controller\Admin\NavigationController::class => ClearTmp\Controller\NavigationController::class,
 	],
 	'templates'   => [
 		'header.tpl' => 'OXID-cleartmp/views/admin/tpl/header.tpl',
