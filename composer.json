@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Hackathon2017\\ClearTmp\\": "../../../source/modules/ox/cleartmp"
+      "OxCom\\ClearTmp\\": "../../../source/modules/oxcom/cleartmp"
     }
   }
 }

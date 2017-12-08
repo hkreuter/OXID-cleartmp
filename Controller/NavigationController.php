@@ -1,6 +1,6 @@
 <?php
 
-namespace Hackathon2017\ClearTmp\Controller;
+namespace OxCom\ClearTmp\Controller;
 
 /**
  * Class NavigationController:

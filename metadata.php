@@ -24,14 +24,11 @@ $aModule = [
     'url'         => 'http://www.oxid-esales.com/',
     'email'       => '',
     'extend'      => [
-        \OxidEsales\Eshop\Application\Controller\Admin\NavigationController::class => \Hackathon2017\ClearTmp\Controller\NavigationController::class,
-    ],
-    'templates'   => [
-        'header.tpl' => 'ox/cleartmp/views/admin/tpl/header.tpl',
+        \OxidEsales\Eshop\Application\Controller\Admin\NavigationController::class => \OxCom\ClearTmp\Controller\NavigationController::class,
     ],
     'blocks'      => [
         [
-            'template' => 'admin/header.tpl',
+            'template' => 'header.tpl',
             'block'    => 'admin_header_links',
             'file'     => '/views/blocks/header__admin_header_links.tpl',
         ],
