@@ -18,6 +18,6 @@ class NavigationControllerTest extends \OxidEsales\TestingLibrary\UnitTestCase
 
         //asserts
         $this->assertFalse(is_dir(\OxidEsales\eShop\Core\Registry::getConfig()->getConfigParam('sCompileDir') . DIRECTORY_SEPARATOR . 'smarty'));
-        $this->assertTrue(file_exists(\OxidEsales\eShop\Core\Registry::getConfig()->getConfigParam('sCompileDir') . '.htaccess'));
+        $this->assertTrue(file_exists(\OxidEsales\eShop\Core\Registry::getConfig()->getConfigParam('sCompileDir') . DIRECTORY_SEPARATOR . '.htaccess'));
     }
 }
