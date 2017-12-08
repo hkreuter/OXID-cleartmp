@@ -24,7 +24,7 @@ $aModule = [
 	'url'         => 'http://www.oxid-esales.com/',
 	'email'       => '',
 	'extend'      => [
-		\OxidEsales\EshopCommunity\Application\Controller\Admin\NavigationController::class => \Hackathon2017\ClearTmp\Controller\NavigationController::class,
+		\OxidEsales\Eshop\Application\Controller\Admin\NavigationController::class => \Hackathon2017\ClearTmp\Controller\NavigationController::class,
 	],
 	'templates'   => [
 		'header.tpl' => 'ox/cleartmp/views/admin/tpl/header.tpl',
