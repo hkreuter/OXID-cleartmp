@@ -5,7 +5,7 @@ namespace Hackathon2017\ClearTmp\Controller;
 /**
  * Class NavigationController:
  */
-class NavigationController extends Navigation_parent
+class NavigationController extends NavigationController_parent
 {
     /**
      * Function to read the tmp-directory and delete the files
