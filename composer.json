@@ -10,7 +10,7 @@
   ],
   "extra": {
     "oxideshop": {
-      "target-directory": "ox/cleartmp"
+      "target-directory": "oxcom/cleartmp"
     }
   },
   "autoload": {
