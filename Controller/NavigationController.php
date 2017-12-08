@@ -26,7 +26,7 @@ class NavigationController extends NavigationController_parent
         $items = new \RecursiveIteratorIterator($directoryIterator, \RecursiveIteratorIterator::CHILD_FIRST);
 
         foreach ($items as $item) {
-            if (in_array($item, $this->doNotDelete)) {
+            if (in_array(basename($item), $this->doNotDelete)) {
                 continue;
             }
             if ($item->isDir()) {
