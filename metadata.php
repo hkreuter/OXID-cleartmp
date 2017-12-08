@@ -18,9 +18,9 @@ $aModule = [
         'de' => 'OXID-cleartmp for OXID eShop 6',
         'en' => 'OXID-cleartmp for OXID eShop 6',
     ],
-    'thumbnail'   => 'out/pictures/picture.png',
+    'thumbnail'   => '',
     'version'     => '2.0.0',
-    'author'      => 'OXID Hackathon 2017',
+    'author'      => 'Oxid Community',
     'url'         => 'http://www.oxid-esales.com/',
     'email'       => '',
     'extend'      => [
