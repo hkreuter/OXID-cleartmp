@@ -7,16 +7,32 @@ namespace Hackathon2017\ClearTmp\Controller;
  */
 class NavigationController extends NavigationController_parent
 {
+
+    /**
+     * Do not deleted the files listed here.
+     *
+     * @var array
+     */
+    private $doNotDelete = ['.htaccess'];
+
     /**
      * Function to read the tmp-directory and delete the files
      */
     public function clearTmp()
     {
-        $aFiles = glob('../tmp/*');
-        foreach($aFiles as $file) {
-            if ($file != '.htaccess')
-            {
-                unlink($file);
+        $tmpDir = \OxidEsales\Eshop\Core\Registry::getConfig()->getConfigParam('sCompileDir');
+
+        $directoryIterator = new \RecursiveDirectoryIterator($tmpDir, \RecursiveDirectoryIterator::SKIP_DOTS);
+        $items = new \RecursiveIteratorIterator($directoryIterator, \RecursiveIteratorIterator::CHILD_FIRST);
+
+        foreach ($items as $item) {
+            if (in_array($item, $this->doNotDelete)) {
+                continue;
+            }
+            if ($item->isDir()) {
+                rmdir($item->getRealPath());
+            } else {
+                unlink($item->getRealPath());
             }
         }
     }
